@@ -1,5 +1,5 @@
 import useIBANConverter from "./hooks/useIBANConverter.tsx";
-import {AccountType} from "./utils/AccountType.ts";
+import {AccountType} from "./utils/accountType.ts";
 
 function App() {
     const iban = useIBANConverter({

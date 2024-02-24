@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {AccountType} from "../utils/AccountType.ts";
+import {AccountType} from "../utils/accountType.ts";
 
 const useIBANConverter = (initialValues: {
     accountNumber: string,
