@@ -14,12 +14,10 @@ npm install use-iban-generator
 
 ### Import
 
-Import the `useIBANGenerator` hook into your component:
+Import the `{AccountType, useIBANGenerator}` hook into your component:
 
 ```jsx
-import React from 'react';
-import useIBANCGenerator from 'use-iban-generator';
-import { AccountType } from './utils/accountType';
+import {AccountType, useIBANGenerator} from "react-iban-generator";
 ```
 
 ### Use in Component
