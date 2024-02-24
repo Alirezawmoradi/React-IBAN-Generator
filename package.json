@@ -4,7 +4,7 @@
   "description": "A custom hook for converting account number to IBAN number",
   "main": "dist/index.umd.js",
   "module": "./dist/index.es.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Alireza Moradi",
   "keywords": [
     "react",
