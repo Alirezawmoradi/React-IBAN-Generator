@@ -2,9 +2,9 @@ import useIBANGenerator, {AccountType} from "./hooks/useIBANGenerator.ts";
 
 function App() {
     const iban = useIBANGenerator({
-        accountNumber: '8480771708',
+        accountNumber: '',
         accountType: AccountType.seporde,
-        bankId: '012',
+        bankId: '',
         countryCode: 'IR'
     })
     return (
