@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "declaration": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -19,7 +20,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "typeRoots": ["./dist/index.d.ts", "node_modules/@types"]
+    "typeRoots": ["./dist/index.d.ts"]
   },
   "include": ["src", "./index.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]

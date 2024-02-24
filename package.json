@@ -1,12 +1,18 @@
 {
-  "name": "react-iban-converter",
+  "name": "react-iban-generator",
   "private": false,
   "description": "A custom hook for converting account number to IBAN number",
-  "main": "dist/react-iban-converter.umd.js",
-  "module": "./dist/react-iban-converter.es.js",
-  "version": "0.0.0",
-  "keywords" : ["react" , "iban","converter","account-number"],
-  "license" : "MIT",
+  "main": "dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "version": "0.0.3",
+  "author": "Alireza Moradi",
+  "keywords": [
+    "react",
+    "iban",
+    "converter",
+    "account-number"
+  ],
+  "license": "MIT",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -16,12 +22,12 @@
     }
   },
   "files": [
-    "dist",
+    "/dist",
     "README.md"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alirezawmoradi/React-IBAN-Converter/settings"
+    "url": "https://github.com/Alirezawmoradi/React-IBAN-Generator"
   },
   "publishConfig": {
     "access": "public"
@@ -29,6 +35,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "prepare": "npm run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

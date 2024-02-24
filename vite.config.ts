@@ -1,23 +1,29 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import * as path from "node:path";
+import path from 'path';
+import dts from "vite-plugin-dts";
+
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
         lib: {
-            entry: path.resolve(__dirname, "src/lib/index.ts"),
-            name: "react-iban-converter",
+            entry: path.resolve(__dirname, "index.ts"),
+            name: "react-iban-generator",
             fileName: (format) => `index.${format}.js`,
         },
         rollupOptions: {
-            external: ['react', 'react-dom'],
+            external: ["react", "react-dom"],
             output: {
                 globals: {
-                    react: 'React',
+                    react: "React",
+                    "react-dom": "ReactDOM",
                 },
             },
         },
+        sourcemap: true,
+        emptyOutDir: true,
     },
-    plugins: [react()],
+    plugins: [react(), dts()],
 });

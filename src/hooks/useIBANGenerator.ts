@@ -1,7 +1,9 @@
 import {useState, useEffect} from 'react';
-import {AccountType} from "../utils/accountType.ts";
-
-const useIBANConverter = (initialValues: {
+export enum AccountType {
+    seporde,
+    tashilat
+}
+const useIBANGenerator = (initialValues: {
     accountNumber: string,
     bankId: string,
     accountType: AccountType,
@@ -78,4 +80,4 @@ const useIBANConverter = (initialValues: {
     return iban;
 };
 
-export default useIBANConverter;
+export default useIBANGenerator;
