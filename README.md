@@ -1,6 +1,6 @@
 # React-IBAN-Converter
 
-A lightweight and easy-to-use custom hook for converting account Number to IBAN code in React applications.
+A lightweight and easy-to-use custom hook for converting Account Number to IBAN Code in React applications.
 
 ## Installation
 
