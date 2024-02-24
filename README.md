@@ -1,4 +1,4 @@
-# React-IBAN-Converter
+# React-IBAN-Generator
 
 A lightweight and easy-to-use custom hook for converting Account Number to IBAN Code in React applications.
 
@@ -7,27 +7,27 @@ A lightweight and easy-to-use custom hook for converting Account Number to IBAN 
 You can install the package via npm:
 
 ```bash
-npm install use-iban-converter
+npm install use-iban-generator
 ```
 
 ## Usage
 
 ### Import
 
-Import the `useIBANConverter` hook into your component:
+Import the `useIBANGenerator` hook into your component:
 
 ```jsx
 import React from 'react';
-import useIBANConverter from 'use-iban-converter';
+import useIBANCGenerator from 'use-iban-generator';
 import { AccountType } from './utils/accountType';
 ```
 
 ### Use in Component
 
-Use the `useIBANConverter` hook in your component:
+Use the `useIBANGenerator` hook in your component:
 
 ```jsx
-    const iban = useIBANConverter({
+    const iban = useIBANGenerator({
         accountNumber: 'account number',
         accountType: AccountType.seporde or AccountType.tashilat,
         bankId: 'Id of your bank',
@@ -48,52 +48,52 @@ Use the `useIBANConverter` hook in your component:
 If you are looking for the ID of a specific bank, you can find it in the list below:
 
 - **آینده (Ayandeh Bank)**
-  - ID: "062"
+    - ID: "062"
 
 - **اقتصاد نوین (Eghtesad Novin Bank)**
-  - ID: "055"
+    - ID: "055"
 
 - **کارآفرین (Karafarin Bank)**
-  - ID: "053"
+    - ID: "053"
 
 - **کشاورزی (Keshavarzi Bank)**
-  - ID: "016"
+    - ID: "016"
 
 - **مسکن (Maskan Bank)**
-  - ID: "014"
+    - ID: "014"
 
 - **ملی (Melli Bank)**
-  - ID: "017"
+    - ID: "017"
 
 - **ملت (Mellat Bank)**
-  - ID: "012"
+    - ID: "012"
 
 - **پارسیان (Parsian Bank)**
-  - ID: "054"
+    - ID: "054"
 
 - **پاسارگاد (Pasargad Bank)**
-  - ID: "057"
+    - ID: "057"
 
 - **پست بانک (Post Bank)**
-  - ID: "021"
+    - ID: "021"
 
 - **رفاه (Refah Bank)**
-  - ID: "013"
+    - ID: "013"
 
 - **صادرات (Saderat Bank)**
-  - ID: "019"
+    - ID: "019"
 
 - **سامان (Saman Bank)**
-  - ID: "021"
+    - ID: "021"
 
 - **صنعت معدن (Sanat Madan Bank)**
-  - ID: "022"
+    - ID: "022"
 
 - **سرمایه (Sarmaye Bank)**
-  - ID: "058"
+    - ID: "058"
 
 - **سپه (Sepah Bank)**
-  - ID: "015"
+    - ID: "015"
 
 
 ## Contributing
